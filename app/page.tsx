@@ -43,10 +43,14 @@ export default async function HomePage() {
           fetchPriority="high"
         />
       ))}
-      {/* SSR snapshot CSS so downloads start during HTML parse — big LCP win. */}
-      {entry.css.map((href) => (
-        <link key={href} rel="stylesheet" href={href} />
-      ))}
+      {/* SSR snapshot CSS so downloads start during HTML parse — big LCP win.
+          Google Fonts URLs are excluded: next/font/google self-hosts Heebo so
+          there is no render-blocking external font-CSS request. */}
+      {entry.css
+        .filter((href) => !href.includes("fonts.googleapis.com"))
+        .map((href) => (
+          <link key={href} rel="stylesheet" href={href} />
+        ))}
       {/*
         Inline script runs during HTML parse — before CSS blocks rendering —
         so the body has no-margin-top from the very first paint.

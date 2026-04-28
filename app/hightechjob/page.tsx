@@ -43,10 +43,13 @@ export default async function HightechjobPage() {
           fetchPriority="high"
         />
       ))}
-      {/* SSR snapshot CSS so downloads start during HTML parse — big LCP win. */}
-      {entry.css.map((href) => (
-        <link key={href} rel="stylesheet" href={href} />
-      ))}
+      {/* SSR snapshot CSS so downloads start during HTML parse — big LCP win.
+          Google Fonts URLs are excluded: next/font/google self-hosts Heebo. */}
+      {entry.css
+        .filter((href) => !href.includes("fonts.googleapis.com"))
+        .map((href) => (
+          <link key={href} rel="stylesheet" href={href} />
+        ))}
       {/* Add no-margin-top before hydration so body margin is removed from first paint,
           allowing the transparent header to overlay the hero banner (same pattern as home page). */}
       {/* eslint-disable-next-line @next/next/no-sync-scripts */}

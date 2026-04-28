@@ -4,6 +4,27 @@
     "locale": "en",
     "dir": "ltr",
     "path": "/hightechjob/",
+    "head": {
+      "title": "משרות דרושים הייטק - קחו את הקריירה שלכם צעד קדימה - SQLink",
+      "htmlLang": "he",
+      "htmlDir": "rtl",
+      "metaTags": [
+        { "name": "description", "content": "דרושים אנשי הייטק שמחפשים הזדמנויות להתפתחות מקצועית ולקפיצה בקריירה. הצטרפו להצלחה! קבוצת SQLink מגייסת טאלנטים למגוון משרות בחזית הטכנולוגיה בחברות ההייטק הנחשקות בישראל. בואו לצמוח איתנו להשתדרג לדבר הבא שלכם!" },
+        { "property": "og:title", "content": "משרות דרושים הייטק - קחו את הקריירה שלכם צעד קדימה - SQLink" },
+        { "property": "og:description", "content": "דרושים אנשי הייטק שמחפשים הזדמנויות להתפתחות מקצועית ולקפיצה בקריירה. הצטרפו להצלחה! קבוצת SQLink מגייסת טאלנטים למגוון משרות בחזית הטכנולוגיה בחברות ההייטק הנחשקות בישראל. בואו לצמוח איתנו להשתדרג לדבר הבא שלכם!" },
+        { "property": "og:url", "content": "https://www.sqlink.com/hightechjob/" },
+        { "property": "og:type", "content": "website" },
+        { "name": "robots", "content": "max-snippet:-1, max-image-preview:large, max-video-preview:-1" }
+      ],
+      "linkTags": [
+        { "rel": "canonical", "href": "https://www.sqlink.com/hightechjob/" }
+      ],
+      "ogImage": "https://www.sqlink.com/images/OGlogo.png",
+      "jsonLd": [],
+      "jsonLdSynthesized": [
+        "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"name\":\"משרות דרושים הייטק - קחו את הקריירה שלכם צעד קדימה - SQLink\",\"description\":\"דרושים אנשי הייטק שמחפשים הזדמנויות להתפתחות מקצועית ולקפיצה בקריירה. קבוצת SQLink מגייסת טאלנטים למגוון משרות בחזית הטכנולוגיה בחברות ההייטק הנחשקות בישראל.\",\"url\":\"https://www.sqlink.com/hightechjob/\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"SQLink\",\"url\":\"https://www.sqlink.com\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://www.sqlink.com/images/OGlogo.png\"}}}"
+      ]
+    },
     "fragment": "fragments/sqlink-com-hightechjob-en-body.html",
     "css": [
       "https://fonts.googleapis.com/css?family=Heebo:300,400,500,700&display=swap",
@@ -172,6 +193,27 @@
     "locale": "en",
     "dir": "ltr",
     "path": "/",
+    "head": {
+      "title": "SQLINK - משרות הייטק ופתרונות IT",
+      "htmlLang": "he",
+      "htmlDir": "rtl",
+      "metaTags": [
+        { "name": "description", "content": "אסקיולינק SQLINK מציעה ללקוחותיה מערך מקיף של פתרונות מחשוב ופתרונות IT. מספקת שירותי IT, שירותי ייעוץ אבטחת מידע ולוח משרות דרושים בהייטק. בין לקוחותיה חברות תוכנה וגופי ממשל." },
+        { "property": "og:title", "content": "SQLINK - משרות הייטק ופתרונות IT" },
+        { "property": "og:description", "content": "אסקיולינק SQLINK מציעה ללקוחותיה מערך מקיף של פתרונות מחשוב ופתרונות IT. מספקת שירותי IT, שירותי ייעוץ אבטחת מידע ולוח משרות דרושים בהייטק. בין לקוחותיה חברות תוכנה וגופי ממשל." },
+        { "property": "og:url", "content": "https://www.sqlink.com/" },
+        { "property": "og:type", "content": "website" },
+        { "name": "robots", "content": "max-snippet:-1, max-image-preview:large, max-video-preview:-1" }
+      ],
+      "linkTags": [
+        { "rel": "canonical", "href": "https://www.sqlink.com/" }
+      ],
+      "ogImage": "https://www.sqlink.com/images/OGlogo.png",
+      "jsonLd": [],
+      "jsonLdSynthesized": [
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"SQLink\",\"url\":\"https://www.sqlink.com\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://www.sqlink.com/images/OGlogo.png\"},\"description\":\"אסקיולינק SQLINK מציעה ללקוחותיה מערך מקיף של פתרונות מחשוב ופתרונות IT. מספקת שירותי IT, שירותי ייעוץ אבטחת מידע ולוח משרות דרושים בהייטק.\"}"
+      ]
+    },
     "fragment": "fragments/sqlink-com-home-en-body.html",
     "css": [
       "https://fonts.googleapis.com/css?family=Heebo:300,400,500,700&display=swap",

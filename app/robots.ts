@@ -24,8 +24,10 @@ export default function robots(): MetadataRoute.Robots {
       ...aiRules,
       {
         userAgent: "*",
-        disallow: "/",
+        allow: "/",
+        disallow: ["/wp-admin/", "/wp-login.php", "/xmlrpc.php", "/_next/static/", "/api/forms/"],
       },
     ],
+    sitemap: [`${process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.sqlink.com"}/sitemap.xml`],
   };
 }
