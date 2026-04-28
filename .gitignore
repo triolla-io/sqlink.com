@@ -1,0 +1,7 @@
+node_modules/
+.next/
+.cursor/
+.playwright-mcp/
+sqlink-*.png
+sqlink-*.jpg
+sqlink-top.png

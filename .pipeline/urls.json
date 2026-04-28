@@ -1,0 +1,17 @@
+{
+  "domain": "www.sqlink.com",
+  "scrapedAt": "2026-04-27T07:51:01.189099+00:00",
+  "source": "crawl",
+  "totalPages": 2,
+  "urls": [
+    {
+      "url": "https://www.sqlink.com/",
+      "slug": "sqlink-com-home",
+      "path": "/",
+      "locale": "en",
+      "dir": "ltr",
+      "hreflangAlternates": {},
+      "status": "pending"
+    }
+  ]
+}

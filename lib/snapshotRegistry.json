@@ -1,0 +1,336 @@
+[
+  {
+    "slug": "sqlink-com-hightechjob",
+    "locale": "en",
+    "dir": "ltr",
+    "path": "/hightechjob/",
+    "fragment": "fragments/sqlink-com-hightechjob-en-body.html",
+    "css": [
+      "https://fonts.googleapis.com/css?family=Heebo:300,400,500,700&display=swap",
+      "/assets/_cas/f0b722c48c52082cd77261574e22a5251fe37ea4b291b1441134145bab9b2063.css",
+      "/assets/_cas/597978bca0f97e5bb3f70452c24f8a0c93db7f7229433c2a54706b85cdd39aa6.css",
+      "/assets/_cas/799aeb25cc0373fdee0e1b1db7ad6c2f6a0e058dfadaa3379689f583213190bd.css",
+      "/assets/_cas/790247daba702a63c3c3944bc23a832e81bd533ef4e5e856a1b953b7162f83c2.css",
+      "/assets/_cas/1e74dbc2467377a07f1cc883c0fa56259edd244098caaf5b0c54053cf7abfd5a.css",
+      "/assets/_cas/89771a0b10d9ea7368051526d87e8e114310141fd0074d95db918e5d3e42d0b9.css",
+      "/assets/_cas/103784a144332b93b22cbc95c8fac90879db958c772428165357a0910054b38f.css",
+      "/assets/_cas/42fab9ddd563d18b3d1279c5dd74fed6a26fd34d3dafd2eb621318d8d12eef1c.css"
+    ],
+    "js": [
+      "/assets/_cas/18b7564cfeadde63f03b5ca4b35463994f3de74180c372591518ff84beec0f45.js",
+      "/assets/_cas/c09c65f7431db31a48a4b740a7384761b02a53fc8bfe0d6b6cea834b47d3afe9.js",
+      "/assets/_cas/717a74d78b1efefbb2e78774324e3b43d874497eff9691e663b462e58e4231f2.js",
+      "/assets/_cas/2595496fe48df6fcf9b1bc57c29a744c121eb4dd11566466bc13d2e52e6bbcc8.js",
+      "/assets/_cas/11b1c0e5a3310cfaf10c857db28ffbbe227c31bac0acdd5b56397eac032c82d9.js",
+      "/assets/_cas/f46c9ca499e58948c90d50ea3f4504bbf6ec9bd53eddd9d0507f3edd6d74be46.js",
+      "/assets/_cas/cb4fa49e0d0831e31f16941ab1a8ac914c846ba218a7a110d5319661ba710d2a.js",
+      "/assets/_cas/0bad7e3a8031272f74e25e91d73f50a3e90f9726df30b38823b94f956ea82c67.js",
+      "/assets/_cas/b0130ecd32b2fa4488cd7d76f02391532295bef5541d30d213a74b3fcae89177.js",
+      "/assets/_cas/bc9289b5a6efd52be5b5cafe8689dad9af6e581ebc45ec9429c4da7150d48f9c.js",
+      "/assets/_cas/7f397dc92228965d08b034ddafdd1773d868c820f65767537a1c9e632e042e55.js",
+      "/assets/_cas/6a16115eb0fd84c7979bb220a91f2a646e9f2873c4a5262ba50c03c4f0c0112f.js",
+      "/assets/_cas/6c91392a050174764e7f2abbca5c4a1023270d939cd1e2f7c0d8f5b66a6c7b7d.js",
+      "/assets/_cas/935e873eb09cbdc67ad319a135ce5bf2fa9beb012bea87d8f06bea9654e39029.js",
+      "/assets/_cas/c1bcb5f517a1d4bc17625de99f6387d5d02aa989875bec00f7ea9df1ce4a85d7.js",
+      "/assets/_cas/7aab95c4b230c958146ea400a46fffc6cd25d7f0866341a123cb6f5c42089432.js",
+      "/assets/_cas/817617a0a1359b3264e7e6ff117d583b405e4be4c6c3adae82b1c1f246ed3276.js",
+      "/assets/_cas/38732bf264eaf66d05fb31847b4c280bddaab5e1658cba47cdd9d0786331602c.js"
+    ],
+    "inlineScripts": [
+      {
+        "position": 3,
+        "code": "const navToggle = document.querySelector('.custom-header__menu-toggle');\n    const navList = document.querySelector('.nav__list');\n    const navList2 = document.querySelector('.nav__list2');\n    const navLinks = document.querySelectorAll('.nav__list-link');\n    const navLogo = document.querySelectorAll('.custom-header__nav-small-logo');\n    navList.setAttribute('aria-expanded', 'true');\n    navList2.setAttribute('aria-expanded', 'true');\n\n    navToggle.addEventListener(\"keypress\", function onEvent(event) {\n        if (event.key === \"Enter\") {\n            this.setAttribute('aria-expanded', 'true');\n            navList.removeAttribute(\"hidden\");\n            navList2.removeAttribute(\"hidden\"); \n            //navLogo.removeAttribute(\"hidden\"); \n            navList.setAttribute('aria-expanded', 'true');\n            navList2.setAttribute('aria-expanded', 'true');\n            document.getElementsByClassName(\"overlay-close\")[0].style.display = \"block\";\n            document.getElementById(\"custom-header\").classList.remove(\"transparent\");\n            document.getElementById(\"menu_toogle\").classList.add(\"open\");\n            document.getElementsByClassName(\"custom-header__nav\")[0].classList.add(\"open\");\n            document.getElementById('firtLi').focus();\n        }\n    });\n\n    navToggle.addEventListener('keydown', function () {\n\n        if (event.keyCode === 9)//tab\n        {\n            navToggle.setAttribute('aria-expanded', 'false');\n            navList.setAttribute(\"hidden\", true);\n            navList2.setAttribute(\"hidden\", true);\n        }\n\n        if (event.keyCode === \"13\")//enter\n        {\n\n            this.setAttribute('aria-expanded', 'true');\n            navList.removeAttribute(\"hidden\");\n            navList2.removeAttribute(\"hidden\");\n            navLogo.removeAttribute(\"hidden\");\n            navList.setAttribute('aria-expanded', 'true');\n            navList2.setAttribute('aria-expanded', 'true');\n            document.getElementsByClassName(\"overlay-close\")[0].style.display = \"block\";\n            document.getElementById(\"custom-header\").classList.remove(\"transparent\");\n            document.getElementById(\"menu_toogle\").classList.add(\"open\");\n            document.getElementsByClassName(\"custom-header__nav\")[0].classList.add(\"open\");\n            document.getElementById('firtLi').focus();\n        }\n    });\n    document.addEventListener('keydown', (event) => {\n        // Ignore IME composition\n        if (event.isComposing || event.keyCode === 229) {\n            return;\n        }\n\n        // Close menu with ESC key\n        if (event.keyCode === 27) {\n            if (!navList.hasAttribute('hidden')) {\n                navToggle.setAttribute('aria-expanded', 'false');\n                navList.setAttribute('hidden', 'true');\n                document.getElementsByClassName(\"overlay-close\")[0].style.display = \"none\";\n                document.getElementById(\"custom-header\").classList.add(\"transparent\");\n                navList.classList.add(\"hidden\");\n                document.getElementById(\"menu_toogle\").classList.remove(\"open\");\n                document.getElementsByClassName(\"custom-header__nav\")[0].classList.remove(\"open\");\n\n            }\n        }\n\n    });"
+      },
+      {
+        "position": 3,
+        "code": "$(function () {\n        if ($('#hotJobsScroller').length > 0)\n        {\n            $('#hotJobsScroller').carouFredSel({\n                align: false,\n                auto:true,\n                infinite: true,\n                circular: true,\n                width: \"100%\",\n                height: 264,\n                direction: \"up\",\n                items:8,\n                scroll: {\n                    fx: \"directscroll\",\n                    items: 1,\n                    duration: 2000,\n                    easing: \"linear\",\n                    timeoutDuration: 0,\n                    pauseOnHover: \"immediate\"\n                }\n\n            });\n\n        }\n\n\n         });"
+      },
+      {
+        "position": 3,
+        "code": "$(document).ready(function () {\n        var newHeight = 0;\n        $('.ULCategories .LICategories').eq(0).addClass('selected');\n        $('.inputPageCategoriesHP').addClass('none');\n        $('.inputPageCategoriesHP').eq(0).removeClass('none');\n        $('.inputPageCategoriesHP').eq(0).addClass('open');\n\n        $('.categoriesCareerHP').css(\"height\", 1100 + \"px\");\n      \n    });\n    //CLICKING\n    $(function () {\n        $('.ULCategories .LICategories').each(function () {\n            var $currentNav = $(this);\n            var group = $(this).attr('Id');\n            $(this).click(function () {\n                $('.inputPageCategoriesHP').removeClass('open');\n                $('.inputPageCategoriesHP').addClass('none');\n                $('.inputPageCategoriesHP').attr('aria-selected','false');\n\n                $('#sub' + group).removeClass('none');\n                $('#sub' + group).addClass('open');\n\n                var minHeight = 500;\n                var newHeight = Math.abs($('#sub' + group).height());\n\n                newHeight = 1100;\n\n                $('.inputPageCategoriesHP').css(\"height\", (newHeight + 50) + \"px\");\n\n                $('.ULCategories .LICategories').removeClass('selected');\n                $(this).addClass('selected');\n            });\n            $(this).keyup(function (event) {\n                if (event.keyCode === 13) {\n                    $(this).click();\n                }\n            });\n\n        });\n    });"
+      },
+      {
+        "position": 3,
+        "code": "$(function () {\n        //close all answers\n        $('.hiddenDiv').hide();\n        var newHeight = 0;\n\n\n        $('.boxInput').each(function () {\n            var group = $(this).attr('Id');\n            var $currentItem = $(this);\n            var $inner = $('#' + group + ' .inner');\n\n            //click on more link to open\n            $('#' + group + ' .more').click(function () {\n                var originalHeight = $(this).parent().parent().height();\n                var addHeight = originalHeight + $(this).parent().find('.hiddenDiv').height() + 70;\n\n                $(this).parent().parent().parent().parent().css(\"height\", addHeight + \"px\");\n                $('#' + group + ' .hiddenDiv').slideDown('slow');\n                $('#' + group + ' .more').hide();\n            });\n\n            //click on title link to open\n            $('#' + group + ' .jobName').click(function () {\n                var originalHeight = $(this).parent().parent().height();\n                var addHeight = originalHeight + $(this).parent().find('.hiddenDiv').height() + 70;\n\n                $(this).parent().parent().parent().parent().css(\"height\", addHeight + \"px\");\n                $('#' + group + ' .hiddenDiv').slideDown('slow');\n                $('#' + group + ' .more').hide();\n            });\n\n            //click on link to close\n            $('#' + group + ' .close').click(function () {\n                $('#' + group + ' .hiddenDiv').slideUp('slow');\n                $('#' + group + ' .more').show();\n            });\n        });\n\n    });"
+      },
+      {
+        "position": 3,
+        "code": "$(function () {\n        if ($('#hotJobsScroller').length > 0)\n        {\n            $('#hotJobsScroller').carouFredSel({\n                align: false,\n                auto:true,\n                infinite: true,\n                circular: true,\n                width: '100%',\n                height: 264,\n                direction: \"up\",\n                items:8,\n                scroll: {\n                    fx: \"directscroll\",\n                    items: 1,\n                    duration: 2000,\n                    easing: \"linear\",\n                    timeoutDuration: 0,\n                    pauseOnHover: \"immediate\"\n                }\n\n            });\n\n        }\n\n\n         });"
+      },
+      {
+        "position": 18,
+        "code": "$isEng = 'False';"
+      }
+    ],
+    "loadOrderSha": "facb4fcc69d68f995f744f71f17fa861e569570c94166626d412ffb2c7ab6b4d",
+    "gsapHook": false,
+    "loadedDelayMs": 800,
+    "head": {
+      "title": "משרות דרושים הייטק - קחו את הקריירה שלכם צעד קדימה - SQLink",
+      "htmlLang": "",
+      "htmlDir": "ltr",
+      "metaTags": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "description",
+          "content": "דרושים אנשי הייטק שמחפשים הזדמנויות להתפתחות מקצועית ולקפיצה בקריירה. הצטרפו להצלחה! קבוצת  SQLink מגייסת טאלנטים למגוון משרות בחזית הטכנולוגיה בחברות ההייטק הנחשקות בישראל. בואו לצמוח איתנו להשתדרג לדבר הבא שלכם!"
+        },
+        {
+          "property": "og:url",
+          "content": "https://www.sqlink.com/hightechjob/"
+        },
+        {
+          "property": "og:image",
+          "content": "https://www.sqlink.com/images/OGlogo.png"
+        },
+        {
+          "property": "og:description",
+          "content": "דרושים אנשי הייטק שמחפשים הזדמנויות להתפתחות מקצועית ולקפיצה בקריירה. הצטרפו להצלחה! קבוצת  SQLink מגייסת טאלנטים למגוון משרות בחזית הטכנולוגיה בחברות ההייטק הנחשקות בישראל. בואו לצמוח איתנו להשתדרג לדבר הבא שלכם!"
+        },
+        {
+          "property": "og:title",
+          "content": " משרות דרושים הייטק - קחו את הקריירה שלכם צעד קדימה - SQLink     "
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "property": "fb:app_id",
+          "content": "761084533926837"
+        },
+        {
+          "content": "summary_large_image",
+          "name": "twitter:card"
+        },
+        {
+          "content": " משרות דרושים הייטק - קחו את הקריירה שלכם צעד קדימה - SQLink     ",
+          "name": "twitter:title"
+        },
+        {
+          "content": "דרושים אנשי הייטק שמחפשים הזדמנויות להתפתחות מקצועית ולקפיצה בקריירה. הצטרפו להצלחה! קבוצת  SQLink מגייסת טאלנטים למגוון משרות בחזית הטכנולוגיה בחברות ההייטק הנחשקות בישראל. בואו לצמוח איתנו להשתדרג לדבר הבא שלכם!",
+          "name": "twitter:description"
+        },
+        {
+          "content": "https://www.sqlink.com/images/OGlogo.png",
+          "name": "twitter:image"
+        },
+        {
+          "content": "SQLINK - משרות הייטק ופתרונות IT",
+          "property": "og:site_name"
+        },
+        {
+          "content": "max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+          "name": "robots"
+        }
+      ],
+      "linkTags": [
+        {
+          "rel": "canonical",
+          "href": "https://www.sqlink.com/hightechjob/"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "he",
+          "href": "https://sqlink.com/"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "en",
+          "href": "https://sqlink.com/en/"
+        }
+      ],
+      "jsonLd": [],
+      "ogImage": "https://www.sqlink.com/images/OGlogo.png",
+      "jsonLdSynthesized": [
+        "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://www.sqlink.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"משרות דרושים הייטק - קחו את הקריירה שלכם צעד קדימה - SQLink\", \"item\": \"https://www.sqlink.com/sqlink-com-hightechjob\"}]}",
+        "{\"@context\": \"https://schema.org\", \"@type\": \"WebPage\", \"name\": \"משרות דרושים הייטק - קחו את הקריירה שלכם צעד קדימה - SQLink\", \"description\": \"דרושים אנשי הייטק שמחפשים הזדמנויות להתפתחות מקצועית ולקפיצה בקריירה. הצטרפו להצלחה! קבוצת  SQLink מגייסת טאלנטים למגוון משרות בחזית הטכנולוגיה בחברות ההייטק הנחשקות בישראל. בואו לצמוח איתנו להשתדרג לדבר הבא שלכם!\", \"url\": \"https://www.sqlink.com/sqlink-com-hightechjob\"}"
+      ]
+    },
+    "fontPreloads": [
+      "/assets/_cas/0b596a0e5ef06ced3f959bd57193ed723d5fe0fb1f4c292c98ed6a54e3a8f51e.woff2",
+      "/assets/_cas/b6a9ec51288235481e33ef8d883c8464cf9842aa20465cf7453f111569fce954.woff2",
+      "/assets/_cas/1f62512c008c7442a1aa62da2073360cf6497f253dca96f999b320ce4c27a235.woff2"
+    ],
+    "imagePreloads": [
+      {
+        "href": "/assets/_cas/5c8217cb0f34ed0ca5dd9bda36c148513bcca12885fc627ed196611d58a4ee22.png",
+        "type": "image/png"
+      }
+    ],
+    "jsDefer": []
+  },
+  {
+    "slug": "sqlink-com-home",
+    "locale": "en",
+    "dir": "ltr",
+    "path": "/",
+    "fragment": "fragments/sqlink-com-home-en-body.html",
+    "css": [
+      "https://fonts.googleapis.com/css?family=Heebo:300,400,500,700&display=swap",
+      "/assets/_cas/f0b722c48c52082cd77261574e22a5251fe37ea4b291b1441134145bab9b2063.css",
+      "/assets/_cas/597978bca0f97e5bb3f70452c24f8a0c93db7f7229433c2a54706b85cdd39aa6.css",
+      "/assets/_cas/799aeb25cc0373fdee0e1b1db7ad6c2f6a0e058dfadaa3379689f583213190bd.css",
+      "/assets/_cas/790247daba702a63c3c3944bc23a832e81bd533ef4e5e856a1b953b7162f83c2.css",
+      "/assets/_cas/1e74dbc2467377a07f1cc883c0fa56259edd244098caaf5b0c54053cf7abfd5a.css",
+      "/assets/_cas/89771a0b10d9ea7368051526d87e8e114310141fd0074d95db918e5d3e42d0b9.css",
+      "/assets/_cas/103784a144332b93b22cbc95c8fac90879db958c772428165357a0910054b38f.css",
+      "/assets/_cas/42fab9ddd563d18b3d1279c5dd74fed6a26fd34d3dafd2eb621318d8d12eef1c.css"
+    ],
+    "js": [
+      "/assets/_cas/18b7564cfeadde63f03b5ca4b35463994f3de74180c372591518ff84beec0f45.js",
+      "/assets/_cas/c09c65f7431db31a48a4b740a7384761b02a53fc8bfe0d6b6cea834b47d3afe9.js",
+      "/assets/_cas/717a74d78b1efefbb2e78774324e3b43d874497eff9691e663b462e58e4231f2.js",
+      "/assets/_cas/2595496fe48df6fcf9b1bc57c29a744c121eb4dd11566466bc13d2e52e6bbcc8.js",
+      "/assets/_cas/11b1c0e5a3310cfaf10c857db28ffbbe227c31bac0acdd5b56397eac032c82d9.js",
+      "/assets/_cas/f46c9ca499e58948c90d50ea3f4504bbf6ec9bd53eddd9d0507f3edd6d74be46.js",
+      "/assets/_cas/cb4fa49e0d0831e31f16941ab1a8ac914c846ba218a7a110d5319661ba710d2a.js",
+      "/assets/_cas/0bad7e3a8031272f74e25e91d73f50a3e90f9726df30b38823b94f956ea82c67.js",
+      "/assets/_cas/b0130ecd32b2fa4488cd7d76f02391532295bef5541d30d213a74b3fcae89177.js",
+      "/assets/_cas/bc9289b5a6efd52be5b5cafe8689dad9af6e581ebc45ec9429c4da7150d48f9c.js",
+      "/assets/_cas/7f397dc92228965d08b034ddafdd1773d868c820f65767537a1c9e632e042e55.js",
+      "/assets/_cas/6a16115eb0fd84c7979bb220a91f2a646e9f2873c4a5262ba50c03c4f0c0112f.js",
+      "/assets/_cas/6c91392a050174764e7f2abbca5c4a1023270d939cd1e2f7c0d8f5b66a6c7b7d.js",
+      "/assets/_cas/935e873eb09cbdc67ad319a135ce5bf2fa9beb012bea87d8f06bea9654e39029.js",
+      "/assets/_cas/c1bcb5f517a1d4bc17625de99f6387d5d02aa989875bec00f7ea9df1ce4a85d7.js",
+      "/assets/_cas/7aab95c4b230c958146ea400a46fffc6cd25d7f0866341a123cb6f5c42089432.js",
+      "/assets/_cas/817617a0a1359b3264e7e6ff117d583b405e4be4c6c3adae82b1c1f246ed3276.js",
+      "/assets/_cas/38732bf264eaf66d05fb31847b4c280bddaab5e1658cba47cdd9d0786331602c.js"
+    ],
+    "inlineScripts": [
+      {
+        "position": 3,
+        "code": "const navToggle = document.querySelector('.custom-header__menu-toggle');\n    const navList = document.querySelector('.nav__list');\n    const navList2 = document.querySelector('.nav__list2');\n    const navLinks = document.querySelectorAll('.nav__list-link');\n    const navLogo = document.querySelectorAll('.custom-header__nav-small-logo');\n    navList.setAttribute('aria-expanded', 'true');\n    navList2.setAttribute('aria-expanded', 'true');\n\n    navToggle.addEventListener(\"keypress\", function onEvent(event) {\n        if (event.key === \"Enter\") {\n            this.setAttribute('aria-expanded', 'true');\n            navList.removeAttribute(\"hidden\");\n            navList2.removeAttribute(\"hidden\"); \n            //navLogo.removeAttribute(\"hidden\"); \n            navList.setAttribute('aria-expanded', 'true');\n            navList2.setAttribute('aria-expanded', 'true');\n            document.getElementsByClassName(\"overlay-close\")[0].style.display = \"block\";\n            document.getElementById(\"custom-header\").classList.remove(\"transparent\");\n            document.getElementById(\"menu_toogle\").classList.add(\"open\");\n            document.getElementsByClassName(\"custom-header__nav\")[0].classList.add(\"open\");\n            document.getElementById('firtLi').focus();\n        }\n    });\n\n    navToggle.addEventListener('keydown', function () {\n\n        if (event.keyCode === 9)//tab\n        {\n            navToggle.setAttribute('aria-expanded', 'false');\n            navList.setAttribute(\"hidden\", true);\n            navList2.setAttribute(\"hidden\", true);\n        }\n\n        if (event.keyCode === \"13\")//enter\n        {\n\n            this.setAttribute('aria-expanded', 'true');\n            navList.removeAttribute(\"hidden\");\n            navList2.removeAttribute(\"hidden\");\n            navLogo.removeAttribute(\"hidden\");\n            navList.setAttribute('aria-expanded', 'true');\n            navList2.setAttribute('aria-expanded', 'true');\n            document.getElementsByClassName(\"overlay-close\")[0].style.display = \"block\";\n            document.getElementById(\"custom-header\").classList.remove(\"transparent\");\n            document.getElementById(\"menu_toogle\").classList.add(\"open\");\n            document.getElementsByClassName(\"custom-header__nav\")[0].classList.add(\"open\");\n            document.getElementById('firtLi').focus();\n        }\n    });\n    document.addEventListener('keydown', (event) => {\n        // Ignore IME composition\n        if (event.isComposing || event.keyCode === 229) {\n            return;\n        }\n\n        // Close menu with ESC key\n        if (event.keyCode === 27) {\n            if (!navList.hasAttribute('hidden')) {\n                navToggle.setAttribute('aria-expanded', 'false');\n                navList.setAttribute('hidden', 'true');\n                document.getElementsByClassName(\"overlay-close\")[0].style.display = \"none\";\n                document.getElementById(\"custom-header\").classList.add(\"transparent\");\n                navList.classList.add(\"hidden\");\n                document.getElementById(\"menu_toogle\").classList.remove(\"open\");\n                document.getElementsByClassName(\"custom-header__nav\")[0].classList.remove(\"open\");\n\n            }\n        }\n\n    });"
+      },
+      {
+        "position": 14,
+        "code": "$(function () {\n        if ($('#hotJobsScroller').length > 0)\n        {\n            $('#hotJobsScroller').carouFredSel({\n                align: false,\n                auto:true,\n                infinite: true,\n                circular: true,\n                width: \"100%\",\n                height: 264,\n                direction: \"up\",\n                items:8,\n                scroll: {\n                    fx: \"directscroll\",\n                    items: 1,\n                    duration: 2000,\n                    easing: \"linear\",\n                    timeoutDuration: 0,\n                    pauseOnHover: \"immediate\"\n                }\n\n            });\n\n        }\n\n\n         });"
+      },
+      {
+        "position": 3,
+        "code": "$(document).ready(function () {\n        var newHeight = 0;\n        $('.ULCategories .LICategories').eq(0).addClass('selected');\n        $('.inputPageCategoriesHP').addClass('none');\n        $('.inputPageCategoriesHP').eq(0).removeClass('none');\n        $('.inputPageCategoriesHP').eq(0).addClass('open');\n\n        $('.categoriesCareerHP').css(\"height\", 1100 + \"px\");\n      \n    });\n    //CLICKING\n    $(function () {\n        $('.ULCategories .LICategories').each(function () {\n            var $currentNav = $(this);\n            var group = $(this).attr('Id');\n            $(this).click(function () {\n                $('.inputPageCategoriesHP').removeClass('open');\n                $('.inputPageCategoriesHP').addClass('none');\n                $('.inputPageCategoriesHP').attr('aria-selected','false');\n\n                $('#sub' + group).removeClass('none');\n                $('#sub' + group).addClass('open');\n\n                var minHeight = 500;\n                var newHeight = Math.abs($('#sub' + group).height());\n\n                newHeight = 1100;\n\n                $('.inputPageCategoriesHP').css(\"height\", (newHeight + 50) + \"px\");\n\n                $('.ULCategories .LICategories').removeClass('selected');\n                $(this).addClass('selected');\n            });\n            $(this).keyup(function (event) {\n                if (event.keyCode === 13) {\n                    $(this).click();\n                }\n            });\n\n        });\n    });"
+      },
+      {
+        "position": 3,
+        "code": "$(function () {\n        //close all answers\n        $('.hiddenDiv').hide();\n        var newHeight = 0;\n\n\n        $('.boxInput').each(function () {\n            var group = $(this).attr('Id');\n            var $currentItem = $(this);\n            var $inner = $('#' + group + ' .inner');\n\n            //click on more link to open\n            $('#' + group + ' .more').click(function () {\n                var originalHeight = $(this).parent().parent().height();\n                var addHeight = originalHeight + $(this).parent().find('.hiddenDiv').height() + 70;\n\n                $(this).parent().parent().parent().parent().css(\"height\", addHeight + \"px\");\n                $('#' + group + ' .hiddenDiv').slideDown('slow');\n                $('#' + group + ' .more').hide();\n            });\n\n            //click on title link to open\n            $('#' + group + ' .jobName').click(function () {\n                var originalHeight = $(this).parent().parent().height();\n                var addHeight = originalHeight + $(this).parent().find('.hiddenDiv').height() + 70;\n\n                $(this).parent().parent().parent().parent().css(\"height\", addHeight + \"px\");\n                $('#' + group + ' .hiddenDiv').slideDown('slow');\n                $('#' + group + ' .more').hide();\n            });\n\n            //click on link to close\n            $('#' + group + ' .close').click(function () {\n                $('#' + group + ' .hiddenDiv').slideUp('slow');\n                $('#' + group + ' .more').show();\n            });\n        });\n\n    });"
+      },
+      {
+        "position": 14,
+        "code": "$(function () {\n        if ($('#hotJobsScroller').length > 0)\n        {\n            $('#hotJobsScroller').carouFredSel({\n                align: false,\n                auto:true,\n                infinite: true,\n                circular: true,\n                width: '100%',\n                height: 264,\n                direction: \"up\",\n                items:8,\n                scroll: {\n                    fx: \"directscroll\",\n                    items: 1,\n                    duration: 2000,\n                    easing: \"linear\",\n                    timeoutDuration: 0,\n                    pauseOnHover: \"immediate\"\n                }\n\n            });\n\n        }\n\n\n         });"
+      },
+      {
+        "position": 18,
+        "code": "$isEng = 'False';"
+      }
+    ],
+    "loadOrderSha": "facb4fcc69d68f995f744f71f17fa861e569570c94166626d412ffb2c7ab6b4d",
+    "gsapHook": false,
+    "loadedDelayMs": 800,
+    "head": {
+      "title": "SQLINK - משרות הייטק ופתרונות IT",
+      "htmlLang": "",
+      "htmlDir": "ltr",
+      "metaTags": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "description",
+          "content": "אסקיולינק SQLINK מציעה ללקוחותיה מערך מקיף של פתרונות מחשוב ופתרונות IT.  מספקת שירותי IT, שירותי ייעוץ אבטחת מידע ולוח משרות דרושים בהייטק. בין לקוחותיה חברות תוכנה וגופי ממשל."
+        },
+        {
+          "property": "og:url",
+          "content": "https://www.sqlink.com/"
+        },
+        {
+          "property": "og:image",
+          "content": "https://www.sqlink.com/images/OGlogo.png"
+        },
+        {
+          "property": "og:description",
+          "content": "אסקיולינק SQLINK מציעה ללקוחותיה מערך מקיף של פתרונות מחשוב ופתרונות IT.  מספקת שירותי IT, שירותי ייעוץ אבטחת מידע ולוח משרות דרושים בהייטק. בין לקוחותיה חברות תוכנה וגופי ממשל."
+        },
+        {
+          "property": "og:title",
+          "content": "SQLINK - משרות הייטק ופתרונות IT"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "property": "fb:app_id",
+          "content": "761084533926837"
+        },
+        {
+          "content": "summary_large_image",
+          "name": "twitter:card"
+        },
+        {
+          "content": "SQLINK - משרות הייטק ופתרונות IT",
+          "name": "twitter:title"
+        },
+        {
+          "content": "אסקיולינק SQLINK מציעה ללקוחותיה מערך מקיף של פתרונות מחשוב ופתרונות IT.  מספקת שירותי IT, שירותי ייעוץ אבטחת מידע ולוח משרות דרושים בהייטק. בין לקוחותיה חברות תוכנה וגופי ממשל.",
+          "name": "twitter:description"
+        },
+        {
+          "content": "https://www.sqlink.com/images/OGlogo.png",
+          "name": "twitter:image"
+        },
+        {
+          "content": "SQLINK - משרות הייטק ופתרונות IT",
+          "property": "og:site_name"
+        },
+        {
+          "content": "max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+          "name": "robots"
+        }
+      ],
+      "linkTags": [
+        {
+          "rel": "canonical",
+          "href": "https://www.sqlink.com/"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "he",
+          "href": "https://sqlink.com/"
+        },
+        {
+          "rel": "alternate",
+          "hreflang": "en",
+          "href": "https://sqlink.com/en/"
+        }
+      ],
+      "jsonLd": [],
+      "ogImage": "https://www.sqlink.com/images/OGlogo.png",
+      "jsonLdSynthesized": [
+        "{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://www.sqlink.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"SQLINK - משרות הייטק ופתרונות IT\", \"item\": \"https://www.sqlink.com/sqlink-com-home\"}]}",
+        "{\"@context\": \"https://schema.org\", \"@type\": \"WebPage\", \"name\": \"SQLINK - משרות הייטק ופתרונות IT\", \"description\": \"אסקיולינק SQLINK מציעה ללקוחותיה מערך מקיף של פתרונות מחשוב ופתרונות IT.  מספקת שירותי IT, שירותי ייעוץ אבטחת מידע ולוח משרות דרושים בהייטק. בין לקוחותיה חברות תוכנה וגופי ממשל.\", \"url\": \"https://www.sqlink.com/sqlink-com-home\"}"
+      ]
+    },
+    "fontPreloads": [
+      "/assets/_cas/0b596a0e5ef06ced3f959bd57193ed723d5fe0fb1f4c292c98ed6a54e3a8f51e.woff2",
+      "/assets/_cas/b6a9ec51288235481e33ef8d883c8464cf9842aa20465cf7453f111569fce954.woff2",
+      "/assets/_cas/1f62512c008c7442a1aa62da2073360cf6497f253dca96f999b320ce4c27a235.woff2"
+    ],
+    "imagePreloads": [
+      {
+        "href": "/assets/_cas/5c8217cb0f34ed0ca5dd9bda36c148513bcca12885fc627ed196611d58a4ee22.png",
+        "type": "image/png"
+      }
+    ],
+    "jsDefer": []
+  }
+]

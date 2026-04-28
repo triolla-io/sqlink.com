@@ -1,0 +1,235 @@
+{
+  "domain": "www.sqlink.com",
+  "passThreshold": 95,
+  "averageScore": 23,
+  "worstScore": 23,
+  "pages": [
+    {
+      "slug": "sqlink-com-hightechjob",
+      "locale": "en",
+      "path": "/sqlink-com-hightechjob",
+      "score": 23,
+      "rawScore": 27,
+      "maxScore": 117,
+      "status": "fail",
+      "checks": {
+        "title_present": {
+          "weight": 10,
+          "earned": 0,
+          "ok": false
+        },
+        "title_matches_live": {
+          "weight": 10,
+          "earned": 0,
+          "ok": false
+        },
+        "description_present": {
+          "weight": 10,
+          "earned": 0,
+          "ok": false
+        },
+        "description_substantive": {
+          "weight": 5,
+          "earned": 0,
+          "ok": false
+        },
+        "canonical": {
+          "weight": 10,
+          "earned": 0,
+          "ok": false
+        },
+        "og_title": {
+          "weight": 5,
+          "earned": 0,
+          "ok": false
+        },
+        "og_description": {
+          "weight": 5,
+          "earned": 0,
+          "ok": false
+        },
+        "og_image": {
+          "weight": 10,
+          "earned": 0,
+          "ok": false
+        },
+        "twitter_card": {
+          "weight": 5,
+          "earned": 0,
+          "ok": false
+        },
+        "json_ld_rendered": {
+          "weight": 15,
+          "earned": 0,
+          "ok": false
+        },
+        "not_noindex": {
+          "weight": 5,
+          "earned": 5,
+          "ok": true
+        },
+        "ai_overview_robots": {
+          "weight": 5,
+          "earned": 0,
+          "ok": false
+        },
+        "hreflang": {
+          "weight": 10,
+          "earned": 10,
+          "ok": true
+        },
+        "body_no_tracker_scripts": {
+          "weight": 3,
+          "earned": 3,
+          "ok": true
+        },
+        "body_crawlable_links": {
+          "weight": 3,
+          "earned": 3,
+          "ok": true
+        },
+        "body_all_images_have_alt": {
+          "weight": 2,
+          "earned": 2,
+          "ok": true
+        },
+        "body_no_menuitem_roles": {
+          "weight": 2,
+          "earned": 2,
+          "ok": true
+        },
+        "body_interactive_have_names": {
+          "weight": 2,
+          "earned": 2,
+          "ok": true
+        }
+      },
+      "issues": [
+        "missing <title>",
+        "missing meta description",
+        "missing canonical link",
+        "missing og:title",
+        "missing og:description",
+        "missing og:image",
+        "missing twitter:card",
+        "missing or invalid JSON-LD in rendered HTML",
+        "missing AI-overview robots meta (max-snippet/-1)"
+      ]
+    },
+    {
+      "slug": "sqlink-com-home",
+      "locale": "en",
+      "path": "/sqlink-com-home",
+      "score": 23,
+      "rawScore": 27,
+      "maxScore": 117,
+      "status": "fail",
+      "checks": {
+        "title_present": {
+          "weight": 10,
+          "earned": 0,
+          "ok": false
+        },
+        "title_matches_live": {
+          "weight": 10,
+          "earned": 0,
+          "ok": false
+        },
+        "description_present": {
+          "weight": 10,
+          "earned": 0,
+          "ok": false
+        },
+        "description_substantive": {
+          "weight": 5,
+          "earned": 0,
+          "ok": false
+        },
+        "canonical": {
+          "weight": 10,
+          "earned": 0,
+          "ok": false
+        },
+        "og_title": {
+          "weight": 5,
+          "earned": 0,
+          "ok": false
+        },
+        "og_description": {
+          "weight": 5,
+          "earned": 0,
+          "ok": false
+        },
+        "og_image": {
+          "weight": 10,
+          "earned": 0,
+          "ok": false
+        },
+        "twitter_card": {
+          "weight": 5,
+          "earned": 0,
+          "ok": false
+        },
+        "json_ld_rendered": {
+          "weight": 15,
+          "earned": 0,
+          "ok": false
+        },
+        "not_noindex": {
+          "weight": 5,
+          "earned": 5,
+          "ok": true
+        },
+        "ai_overview_robots": {
+          "weight": 5,
+          "earned": 0,
+          "ok": false
+        },
+        "hreflang": {
+          "weight": 10,
+          "earned": 10,
+          "ok": true
+        },
+        "body_no_tracker_scripts": {
+          "weight": 3,
+          "earned": 3,
+          "ok": true
+        },
+        "body_crawlable_links": {
+          "weight": 3,
+          "earned": 3,
+          "ok": true
+        },
+        "body_all_images_have_alt": {
+          "weight": 2,
+          "earned": 2,
+          "ok": true
+        },
+        "body_no_menuitem_roles": {
+          "weight": 2,
+          "earned": 2,
+          "ok": true
+        },
+        "body_interactive_have_names": {
+          "weight": 2,
+          "earned": 2,
+          "ok": true
+        }
+      },
+      "issues": [
+        "missing <title>",
+        "missing meta description",
+        "missing canonical link",
+        "missing og:title",
+        "missing og:description",
+        "missing og:image",
+        "missing twitter:card",
+        "missing or invalid JSON-LD in rendered HTML",
+        "missing AI-overview robots meta (max-snippet/-1)"
+      ]
+    }
+  ],
+  "passCount": 0,
+  "failCount": 2,
+  "overallStatus": "fail"
+}

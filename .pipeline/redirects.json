@@ -1,0 +1,50 @@
+{
+  "redirects": [
+    {
+      "source": "/Content/css/global.css",
+      "destination": "/Content/css/global.css/",
+      "permanent": true
+    },
+    {
+      "source": "/Content/css/SQLink.css",
+      "destination": "/Content/css/SQLink.css/",
+      "permanent": true
+    },
+    {
+      "source": "/Content/css/jquery.mCustomScrollbar.css",
+      "destination": "/Content/css/jquery.mCustomScrollbar.css/",
+      "permanent": true
+    },
+    {
+      "source": "/Content/css/main.min.css",
+      "destination": "/Content/css/main.min.css/",
+      "permanent": true
+    },
+    {
+      "source": "/Content/css/update.css",
+      "destination": "/Content/css/update.css/",
+      "permanent": true
+    },
+    {
+      "source": "/salary",
+      "destination": "/salary/",
+      "permanent": true
+    },
+    {
+      "source": "/css/FlyingFriends/FlyingFriendsGlobal.css",
+      "destination": "/css/FlyingFriends/FlyingFriendsGlobal.css/",
+      "permanent": true
+    },
+    {
+      "source": "/css/FlyingFriends/FlyingFriends.css",
+      "destination": "/css/FlyingFriends/FlyingFriends.css/",
+      "permanent": true
+    },
+    {
+      "source": "/friends/terms",
+      "destination": "/friends/terms/",
+      "permanent": true
+    }
+  ],
+  "trailingSlash": true
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://www.sqlink.com/sqlink-com-hightechjob",
+    "path": "/sqlink-com-hightechjob",
+    "title": "משרות דרושים הייטק - קחו את הקריירה שלכם צעד קדימה - SQLink",
+    "description": "דרושים אנשי הייטק שמחפשים הזדמנויות להתפתחות מקצועית ולקפיצה בקריירה. הצטרפו להצלחה! קבוצת  SQLink מגייסת טאלנטים למגוון משרות בחזית הטכנולוגיה בחברות ההייטק הנחשקות בישראל. בואו לצמוח איתנו להשתדרג לדבר הבא שלכם!",
+    "language": "en",
+    "markdown": "/sqlink-com-hightechjob.md",
+    "contentType": "page"
+  },
+  {
+    "url": "https://www.sqlink.com/sqlink-com-home",
+    "path": "/sqlink-com-home",
+    "title": "SQLINK - משרות הייטק ופתרונות IT",
+    "description": "אסקיולינק SQLINK מציעה ללקוחותיה מערך מקיף של פתרונות מחשוב ופתרונות IT.  מספקת שירותי IT, שירותי ייעוץ אבטחת מידע ולוח משרות דרושים בהייטק. בין לקוחותיה חברות תוכנה וגופי ממשל.",
+    "language": "en",
+    "markdown": "/sqlink-com-home.md",
+    "contentType": "page"
+  }
+]

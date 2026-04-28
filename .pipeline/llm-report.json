@@ -1,0 +1,124 @@
+{
+  "domain": "www.sqlink.com",
+  "score": 75,
+  "rawScore": 75,
+  "maxScore": 100,
+  "threshold": 95,
+  "overallStatus": "fail",
+  "rubric": [
+    {
+      "key": "llms_txt",
+      "weight": 10,
+      "status": "pass",
+      "earned": 10
+    },
+    {
+      "key": "llms_full_txt",
+      "weight": 5,
+      "status": "pass",
+      "earned": 5
+    },
+    {
+      "key": "robots",
+      "weight": 10,
+      "status": "pass",
+      "earned": 10,
+      "crawlersAllowed": [
+        "GPTBot",
+        "ChatGPT-User",
+        "Claude-Web",
+        "anthropic-ai",
+        "PerplexityBot",
+        "Google-Extended",
+        "CCBot",
+        "Applebot",
+        "YouBot"
+      ]
+    },
+    {
+      "key": "markdown_coverage",
+      "weight": 15,
+      "status": "pass",
+      "earned": 15,
+      "coverage": "2/2"
+    },
+    {
+      "key": "markdown_quality",
+      "weight": 10,
+      "status": "pass",
+      "earned": 10,
+      "coverage": "2/2"
+    },
+    {
+      "key": "json_ld_coverage",
+      "weight": 10,
+      "status": "pass",
+      "earned": 10,
+      "coverage": "2/2"
+    },
+    {
+      "key": "json_ld_rendered",
+      "weight": 10,
+      "status": "fail",
+      "earned": 0,
+      "coverage": "0/2"
+    },
+    {
+      "key": "canonical_rendered",
+      "weight": 10,
+      "status": "fail",
+      "earned": 0,
+      "coverage": "0/2"
+    },
+    {
+      "key": "og_image_rendered",
+      "weight": 5,
+      "status": "fail",
+      "earned": 0,
+      "coverage": "0/2"
+    },
+    {
+      "key": "hreflang",
+      "weight": 5,
+      "status": "pass",
+      "earned": 5,
+      "note": "single-locale site"
+    },
+    {
+      "key": "sitemaps",
+      "weight": 5,
+      "status": "pass",
+      "earned": 5
+    },
+    {
+      "key": "agents_md",
+      "weight": 5,
+      "status": "pass",
+      "earned": 5
+    }
+  ],
+  "markdownCoverage": "2/2",
+  "jsonLdRegistryCoverage": "2/2",
+  "aiCrawlersAllowed": [
+    "GPTBot",
+    "ChatGPT-User",
+    "Claude-Web",
+    "anthropic-ai",
+    "PerplexityBot",
+    "Google-Extended",
+    "CCBot",
+    "Applebot",
+    "YouBot"
+  ],
+  "issues": [
+    "json_ld_rendered: no JSON-LD at /sqlink-com-hightechjob",
+    "json_ld_rendered: no JSON-LD at /sqlink-com-home",
+    "canonical_rendered: no canonical at /sqlink-com-hightechjob",
+    "canonical_rendered: no canonical at /sqlink-com-home",
+    "og_image_rendered: no og:image at /sqlink-com-hightechjob",
+    "og_image_rendered: no og:image at /sqlink-com-home"
+  ],
+  "locales": [
+    "en"
+  ]
+}
