@@ -63,6 +63,15 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   poweredByHeader: false,
 
+  images: {
+    formats: ["image/avif", "image/webp"],
+    minimumCacheTTL: 31536000,
+    remotePatterns: [
+      { protocol: "https", hostname: "www.sqlink.com" },
+      { protocol: "https", hostname: "**.sqlink.com" },
+    ],
+  },
+
   // Serve all public/assets/ as static
   // Assets are fingerprinted by SHA-256 so long-cache headers are safe
   headers: async () => {
