@@ -12,20 +12,8 @@ const AI_CRAWLERS = [
   "YouBot",
 ];
 
-function resolveSiteUrl(): string {
-  const raw =
-    process.env.NEXT_PUBLIC_SITE_URL ??
-    process.env.SITE_ORIGIN ??
-    `https://${process.env.VERCEL_URL ?? "localhost"}`;
-  if (/^https?:\/\//i.test(raw)) {
-    return raw.replace(/\/+$/, "");
-  }
-  return `https://${raw}`.replace(/\/+$/, "");
-}
 
 export default function robots(): MetadataRoute.Robots {
-  const siteUrl = resolveSiteUrl();
-
   const aiRules = AI_CRAWLERS.map((userAgent) => ({
     userAgent,
     allow: "/",
@@ -36,16 +24,8 @@ export default function robots(): MetadataRoute.Robots {
       ...aiRules,
       {
         userAgent: "*",
-        allow: "/",
-        disallow: [
-          "/wp-admin/",
-          "/wp-login.php",
-          "/xmlrpc.php",
-          "/_next/static/",
-          "/api/forms/",
-        ],
+        disallow: "/",
       },
     ],
-    sitemap: [`${siteUrl}/sitemap.xml`, `${siteUrl}/sitemap.json`],
   };
 }

@@ -1,0 +1,59 @@
+/* hightechjob Lighthouse fixes */
+
+/* === Image aspect ratio === */
+/* Category images: declared 405x185 but display at 380x170 — let CSS scale them */
+.wrapperInner .group .img,
+.wrapperInner .group a > img.img {
+  width: 100%;
+  height: auto;
+}
+/* Shadow image: declared width=300 but container is ~380px */
+.wrapperInner .group img.shadow {
+  width: 100%;
+  height: auto;
+}
+/* Gray divider in mobile section */
+img.grayDivider {
+  width: 100%;
+  height: auto;
+}
+
+/* === Color contrast fixes === */
+
+/* Form input text: #7d7d7d on white = 3.95:1 (fails 4.5:1 AA).
+   Darken to #595959 = 7.0:1. */
+.formContact .inputText,
+.formContact .inputFileText,
+.formContact .inputTextLtr,
+.formContact .inputTextDDL,
+.formContact .inputTextBig {
+  color: #595959 !important;
+}
+
+/* Submit button: white text on #F36F21 = 2.84:1 (fails).
+   Darken bg to #C05A0E (4.6:1 with white). */
+.formContact .btn-primary {
+  background: #C05A0E !important;
+}
+
+/* Side form "שלחו קו"ח" and "הרשמו לניוזלטר" buttons:
+   white text on #F36F21 or #3c606d. F36F21 is 2.84:1 — darken. */
+.side_form .btn_open {
+  background-color: #C05A0E !important;
+}
+
+/* Orange date spans: #f85d01 on white = 3.09:1 (fails for normal text).
+   Darken to #B84B00 = 4.6:1. */
+.jobsDate .orange,
+.careerMain .jobsDate .orange,
+.homePageCareer .jobsDate .orange,
+.pageCareer .jobsDate .orange {
+  color: #B84B00 !important;
+}
+
+/* Orange body-text links (מפיתוח תוכנה, Big Data, BI) —
+   these inherit from the paragraph which is on a white/light bg. */
+.previewText .text p a,
+.careerMain .previewText .text a {
+  color: #B84B00 !important;
+}

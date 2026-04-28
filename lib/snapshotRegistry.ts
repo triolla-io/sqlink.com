@@ -48,6 +48,7 @@ export interface SnapshotEntry {
     imagesrcset?: string;
   }>;
   jsDefer?: string[];
+  bodyClass?: string | null;
 }
 
 const registry: SnapshotEntry[] = registryData as SnapshotEntry[];

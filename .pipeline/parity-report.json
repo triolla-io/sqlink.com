@@ -1,0 +1,72 @@
+{
+  "domain": "www.sqlink.com",
+  "viewports": [
+    375,
+    768,
+    1024,
+    1440
+  ],
+  "pages": [
+    {
+      "slug": "sqlink-com-hightechjob",
+      "locale": "en",
+      "liveUrl": "https://www.sqlink.com/hightechjob/",
+      "genUrl": "http://localhost:3001/hightechjob/",
+      "viewports": {
+        "375": {
+          "maxDiff": 255,
+          "diffPct": 14.951,
+          "status": "fail"
+        },
+        "768": {
+          "maxDiff": 255,
+          "diffPct": 19.929,
+          "status": "fail"
+        },
+        "1024": {
+          "maxDiff": 255,
+          "diffPct": 20.365,
+          "status": "fail"
+        },
+        "1440": {
+          "maxDiff": 255,
+          "diffPct": 18.147,
+          "status": "fail"
+        }
+      },
+      "status": "fail"
+    },
+    {
+      "slug": "sqlink-com-home",
+      "locale": "en",
+      "liveUrl": "https://www.sqlink.com/",
+      "genUrl": "http://localhost:3001/",
+      "viewports": {
+        "375": {
+          "maxDiff": 255,
+          "diffPct": 33.695,
+          "status": "fail"
+        },
+        "768": {
+          "maxDiff": 255,
+          "diffPct": 23.831,
+          "status": "fail"
+        },
+        "1024": {
+          "maxDiff": 255,
+          "diffPct": 23.796,
+          "status": "fail"
+        },
+        "1440": {
+          "maxDiff": 255,
+          "diffPct": 21.669,
+          "status": "fail"
+        }
+      },
+      "status": "fail"
+    }
+  ],
+  "overallStatus": "fail",
+  "passCount": 0,
+  "failCount": 2
+}

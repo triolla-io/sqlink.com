@@ -47,6 +47,10 @@ export default async function HightechjobPage() {
       {entry.css.map((href) => (
         <link key={href} rel="stylesheet" href={href} />
       ))}
+      {/* Add no-margin-top before hydration so body margin is removed from first paint,
+          allowing the transparent header to overlay the hero banner (same pattern as home page). */}
+      {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+      <script dangerouslySetInnerHTML={{ __html: `document.body.classList.add('no-margin-top')` }} />
       <SnapshotClient entry={entry} bodyHtml={bodyHtml} widgetProps={widgetProps} />
     </>
   );

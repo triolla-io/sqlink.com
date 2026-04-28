@@ -94,6 +94,13 @@ export default function SnapshotClient({ entry, bodyHtml, widgetProps }: Props) 
     // working unchanged on sites where detect_widgets matched nothing.
     void mountWidgets(rootRef.current, widgetProps ?? null);
 
+    // Apply body classes from registry (e.g. "no-margin-top" for pages with transparent hero header)
+    if (entry.bodyClass) {
+      for (const cls of entry.bodyClass.split(" ")) {
+        if (cls) document.body.classList.add(cls);
+      }
+    }
+
     // Set body dir for RTL locales
     if (entry.dir === "rtl") {
       document.documentElement.dir = "rtl";
@@ -174,6 +181,10 @@ export default function SnapshotClient({ entry, bodyHtml, widgetProps }: Props) 
           script.onerror = () => resolve();
           document.body.appendChild(script);
         });
+        // Yield to main thread between scripts so each script's execution
+        // is a separate task — keeps individual tasks under 50ms and
+        // improves Lighthouse TBT score.
+        await new Promise<void>((r) => setTimeout(r, 0));
       }
 
       _runInlineAt(entry.js.length);
@@ -345,6 +356,13 @@ export default function SnapshotClient({ entry, bodyHtml, widgetProps }: Props) 
 
     return () => {
       unmountWidgets(rootRef.current);
+      // Remove body classes added for this page so they don't bleed to the next
+      // page during SPA navigation.
+      if (entry.bodyClass) {
+        for (const cls of entry.bodyClass.split(" ")) {
+          if (cls) document.body.classList.remove(cls);
+        }
+      }
     };
   }, [entry, widgetProps]);
 

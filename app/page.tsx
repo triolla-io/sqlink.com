@@ -47,6 +47,23 @@ export default async function HomePage() {
       {entry.css.map((href) => (
         <link key={href} rel="stylesheet" href={href} />
       ))}
+      {/*
+        Inline script runs during HTML parse — before CSS blocks rendering —
+        so the body has no-margin-top from the very first paint.
+        SnapshotClient cleanup removes it on SPA navigation away from home.
+      */}
+      {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+      <script dangerouslySetInnerHTML={{ __html: `document.body.classList.add('no-margin-top')` }} />
+      {/*
+        Constrain hero slider to one slide height before slick.js initialises.
+        The wrapper already has overflow:hidden in CSS; without a height all 3
+        uninitialised slides stack vertically. Scoped to .hp_sq-slider__wrapper so
+        it does not bleed to other pages during SPA navigation.
+      */}
+      <style>{`
+        .hp_sq-slider__wrapper { height: 780px; }
+        @media (max-width: 767px) { .hp_sq-slider__wrapper { height: 520px; } }
+      `}</style>
       <SnapshotClient entry={entry} bodyHtml={bodyHtml} widgetProps={widgetProps} />
     </>
   );
